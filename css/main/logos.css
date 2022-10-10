@@ -1,0 +1,14 @@
+.page-logos__block {
+  display: flex;
+  justify-content: center;
+}
+
+.logos-block {
+}
+
+.logos-block__body {
+  padding: 65px 0px 98px 0px;
+}
+
+.logos-block__img {
+}

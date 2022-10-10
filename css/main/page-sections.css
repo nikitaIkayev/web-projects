@@ -1,0 +1,117 @@
+.page-sections__block {
+}
+
+.page-procedures-of-crypt__block {
+}
+
+.page-procedures-of-crypt {
+}
+
+.page-procedures-of-crypt__container {
+}
+
+.page-procedures-of-crypt__body {
+  background: rgba(243, 245, 247, 0.1);
+  border-radius: 22px;
+  min-height: 621px;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-procedures-of-crypt__description {
+  padding: 60px 0px 0px 42px;
+}
+
+.page-procedures-of-crypt__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 121%;
+}
+
+.page-procedures-of-crypt__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  max-width: 417px;
+  margin: 12px 0px 24px 0px;
+}
+
+.page-procedures-of-crypt__button {
+  display: flex;
+}
+
+.page-procedures-of-crypt__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  color: #5992ff;
+  margin: 0px 8px 0px 0px;
+}
+
+.page-procedures-of-crypt__link:hover {
+  background: #ffffff;
+  border-radius: 46px;
+  width: 140px;
+}
+
+.page-procedures-of-crypt__quickness {
+  padding: 42px 0px 0px 0px;
+}
+
+.procedures-of-crypt-quickness {
+}
+
+.page-procedures-of-crypt__exchange {
+  display: flex;
+  align-items: center;
+}
+
+.page-procedures-of-crypt__exchange:not(:last-child) {
+  margin: 0px 0px 16px 0px;
+}
+
+.procedures-of-crypt-quickness__text {
+  margin: 0px 0px 0px 20px;
+}
+
+.page-procedures-of-crypt__img {
+  width: 100%;
+  max-width: 523px;
+}
+
+.procedures-of-crypt-img__body {
+  position: relative;
+  top: 15%;
+}
+
+.frame-converter {
+  position: absolute;
+  z-index: 1;
+  right: 10%;
+}
+
+.frame-converter_border {
+  border-radius: 14px;
+}
+
+.front-coin {
+  position: absolute;
+  z-index: 2;
+  left: 20%;
+  top: 90px;
+}
+
+.back-coins {
+  position: absolute;
+  z-index: -1;
+  left: 11%;
+  top: 35px;
+}

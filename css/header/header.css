@@ -1,0 +1,327 @@
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(/fonts/HelveticaNeue_Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(/fonts/HelveticaNeue_Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(/fonts/HelveticaNeue_Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(/fonts/HelveticaNeueCyr-Light.ttf) format("truetype");
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1;
+  font-size: 18px;
+  font-family: "HelveticaNeue";
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #202032;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+img[hidden] {
+  display: none;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+._container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  box-sizing: content-box;
+}
+
+.header__container {
+  display: flex;
+  min-height: 60px;
+  align-items: center;
+}
+
+.title__logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: inherit;
+}
+
+.header__menu {
+  margin: 4px 254px 0px 56px;
+}
+
+.menu {
+}
+
+.menu__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu__item:not(:last-child) {
+  margin: 0px 42px 0px 0px;
+}
+
+.menu__item:hover {
+  text-decoration: underline;
+}
+
+.menu__link {
+  color: inherit;
+  line-height: 160%;
+  font-weight: normal;
+}
+
+.menu__buttons_block {
+  display: flex;
+  padding: 0px 15px;
+}
+
+.menu__button_loginIn {
+  margin: 0px 20px 0px 0px;
+  background: #ffffff;
+  border: none;
+  border-radius: 10px;
+  width: 94px;
+  height: 36px;
+  transition-property: all;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.menu__button_loginIn:hover {
+  background-color: #1b1c20;
+  color: #ffffff;
+}
+
+.menu__button_signUp {
+  background: #ffffff;
+  border: none;
+  border-radius: 10px;
+  width: 94px;
+  height: 36px;
+  transition: 500ms;
+}
+
+.menu__button_signUp:hover {
+  background-color: #1b1c20;
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .title__logo {
+    font-size: 22px;
+  }
+
+  .header__menu {
+    margin: 4px 200px 0px 56px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header__menu {
+    margin: 4px 140px 0px 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+
+  .title__logo {
+    font-size: 28px;
+  }
+
+  .header__logo {
+    padding: 27px 0px 0px 0px;
+  }
+
+  .menu__button_loginIn {
+    display: none;
+  }
+
+  .menu__button_signUp {
+    display: none;
+  }
+
+  img[hidden] {
+    display: block;
+    margin: 24px 15px 0px 572px;
+  }
+}
+
+@media (max-width: 390px) {
+  .header__logo {
+    padding: 24px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 736px) {
+  img[hidden] {
+    margin: 24px 15px 0px 522px;
+  }
+}
+
+@media (max-width: 696px) {
+  img[hidden] {
+    margin: 24px 15px 0px 472px;
+  }
+}
+
+@media (max-width: 634px) {
+  img[hidden] {
+    margin: 24px 15px 0px 432px;
+  }
+}
+
+@media (max-width: 596px) {
+  img[hidden] {
+    margin: 24px 15px 0px 400px;
+  }
+}
+
+@media (max-width: 564px) {
+  img[hidden] {
+    margin: 24px 15px 0px 362px;
+  }
+}
+
+@media (max-width: 520px) {
+  img[hidden] {
+    margin: 24px 15px 0px 332px;
+  }
+}
+
+@media (max-width: 490px) {
+  img[hidden] {
+    margin: 24px 15px 0px 300px;
+  }
+}
+
+@media (max-width: 468px) {
+  img[hidden] {
+    margin: 24px 15px 0px 270px;
+  }
+}
+
+@media (max-width: 434px) {
+  img[hidden] {
+    margin: 24px 15px 0px 250px;
+  }
+}
+
+@media (max-width: 415px) {
+  img[hidden] {
+    margin: 24px 15px 0px 238px;
+  }
+}
+
+@media (max-width: 392px) {
+  img[hidden] {
+    margin: 24px 15px 0px 200px;
+  }
+}
+
+@media (max-width: 360px) {
+  img[hidden] {
+    margin: 24px 15px 0px 170px;
+  }
+}
+
+@media (max-width: 330px) {
+  img[hidden] {
+    margin: 24px 15px 0px 150px;
+  }
+}
